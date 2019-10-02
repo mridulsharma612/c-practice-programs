@@ -1,22 +1,22 @@
-main ()
-{
-    char a[10];
-    int i,num;
-    printf("enter  string");
-    gets(a);
-    for(i=0;a[i];i++);
-    num=i;
-    reverse(a,num);
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-}
-void reverse(char *p,int num)
-{
-    char b[10];
-    int i,j;
-    for(i=0;i<=num-1;i++)
-        b[i]=*(p+i);
-    for(i=0,j=num-1;i<=num-1;i++,j--)
-        *(p+j)=b[i];
-    for(i=0;i<=num-1;i++)
-        printf("%c",*(p+i));
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int test,i;
+    scanf("%d",&test);
+    long long int arr[test],num;
+    for(i=0;i<test;i++)
+    {
+        scanf("%lld",&num);
+        arr[i] = num*2 + num*3 + num*6;
+    }
+    for(i = 0;i<test;i++)
+    {
+        printf("%lld\n",arr[i]);
+    }
+    return 0;
 }
