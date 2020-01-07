@@ -1,4 +1,4 @@
-bin/test
+bin/
 bin/Untitled2
 bin/Untitled2.c
 bin/Untitled2.c
@@ -12,3 +12,6 @@ enumerators/enum_even_odd.o
 enumerators/enum_even_odd.o
 enumerators/enum_even_odd
 bin/Untitled2.o
+bin/bin
+bin/bin.c
+bin/bin
